@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <h1>Enter you info below</h1>
+    <form action="./form.php" method="POST" enctype="multipart/form-data">
+
+        <label for="first_name">First Name</label><br>
+        <input type="text" name="first_name" id="first_name" required><br><br>
+        
+        <label for="last_name">Last Name</label><br>
+        <input type="text" name="last_name" id="last_name"><br><br>
+        
+        <label for="image">Upload your dp</label><br>
+        <input type="password" name="image" id="image"><br><br>
+
+        <label for="fav_movie">Favourite Movies</label><br>
+        <select name="fav_movie" id="fav_movie">
+            <option value="" selected disabled>Chooose your favourite movies</option>
+            <option value="Prison break">Prison break</option>
+            <option value="GOT">Game of thrones</option>
+            <option value="Power">Power</option>
+            <option value="Money Heist">Money Heist</option>
+        </select><br><br>
+
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message" rows="5" cols="25"></textarea><br><br>
+
+
+        <label for="terms">
+            <input type="checkbox" name="terms" id="terms">
+            Accept our terms of service
+        </label>
+
+        <p>Publish content?</p>
+
+        <label for="publish">
+            <input type="radio" name="publish" id="publish" value="Publish">
+            Publish
+        </label>
+       
+        <label for="publish">
+            <input type="radio" name="publish" id="publish" value="Draft">
+            Draft
+        </label><br><br>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. select all the fruits</p>
+
+        <label for="mango">
+            <input type="checkbox" name="answer" id="mango" value="Mango">
+            Mango
+        </label>
+
+        <label for="tomato">
+            <input type="checkbox" name="answer" id="tomato" value="Tomato">
+            Tomato
+        </label>
+
+        <label for="Pineapple">
+            <input type="checkbox" name="answer" id="Pineapple" value="Pineapple">
+            Pineapple
+        </label>
+
+        <br><br>
+    
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
